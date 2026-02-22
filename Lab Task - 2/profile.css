@@ -32,7 +32,11 @@ img{
 .banner-content h4{
     margin-top: 60px;
 }
+.banner h3{
+    font-size: 2em;
+}
 .info{
+    text-align: center;
     border:2px solid bisque;
     margin: 20px;
     padding: 20px;
