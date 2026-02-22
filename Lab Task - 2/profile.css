@@ -1,0 +1,44 @@
+#header{
+    background-color:rgb(221, 161, 82);
+    text-align: center;
+    align-items: center;
+}
+.profile{
+    width: 70%;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    border: 2px solid burlywood;
+    justify-content: space-between;
+    margin: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.banner-image{
+    width: 200px;
+    padding: 5px;
+}
+.banner-content{
+    text-align: center;
+    margin-left: 70px;
+    align-items: center;
+}
+.banner-content h4{
+    margin-top: 60px;
+}
+.info{
+    border:2px solid bisque;
+    margin: 20px;
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(183, 127, 59);
+    margin: 20px;
+}
