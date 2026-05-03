@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-// Handle Delete
+
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     $sql = "DELETE FROM students WHERE id = $id";
@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
     exit();
 }
 
-// Fetch all students
+
 $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
 ?>
 
@@ -51,7 +51,7 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
         }
         .msg.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
 
-        /* Add Student Form */
+      
         .card {
             background: white;
             border-radius: 8px;
@@ -116,7 +116,6 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
         .btn-delete { background: #e74c3c; color: white; padding: 6px 14px; font-size: 13px; }
         .btn-delete:hover { background: #c0392b; }
 
-        /* Table */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -159,7 +158,7 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
 
 <div class="container">
 
-    <!-- Success Messages -->
+ 
     <?php if (isset($_GET['msg'])): ?>
         <?php
             $messages = [
@@ -174,7 +173,7 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
         <?php endif; ?>
     <?php endif; ?>
 
-    <!-- Add Student Form -->
+    
     <div class="card">
         <h2>➕ Add New Student</h2>
         <form action="add.php" method="POST">
@@ -200,7 +199,7 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id DESC");
         </form>
     </div>
 
-    <!-- Student Records Table -->
+  
     <div class="card">
         <h2>📋 Student Records</h2>
 
